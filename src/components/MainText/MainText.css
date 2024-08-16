@@ -1,0 +1,172 @@
+.main-text-area {
+  padding: 1em 2em;
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-content {
+  text-align: left;
+  width: 100%;
+  transition: all 200ms ease;
+}
+
+.transparent {
+  color: var(--color-white);
+}
+
+.title-cards {
+  display: grid;
+  background-color: rgba(245, 242, 239);
+  gap: 1em;
+  padding: 0.75em;
+  border-top-right-radius: calc(clamp(1em, 1.5vw, 1.5em) * 1.5);
+  border-top-left-radius: calc(clamp(1em, 1.5vw, 1.5em) * 1.5);
+  padding: 4em;
+  margin: 0;
+}
+
+.title-cards span {
+  color: black;
+}
+.grey-text {
+  color: rgb(59, 59, 59);
+}
+
+.black-btn {
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  width: 170px;
+  font-size: 13px;
+  border-radius: 2em;
+}
+
+.acne {
+  position: relative;
+  overflow: hidden;
+}
+
+.num {
+  color: #3c443f;
+}
+
+.doublegrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+}
+
+.sub-text {
+  line-height: 1.6;
+  letter-spacing: normal;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.acne {
+  background-image: url("../../img/acne.webp");
+}
+
+.sc2 {
+  background-image: url("../../img/cream.webp");
+}
+
+.sc3 {
+  background-image: url("../../img/cream.webp");
+}
+
+.sc4 {
+  background-image: url("../../img/cream.webp");
+}
+
+.card-text {
+  width: 300px;
+}
+
+.skin-card {
+  height: 27vw;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-color: var(--glight);
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.scoll-btn {
+  width: 60%;
+  height: 50px;
+  border-radius: 1px;
+}
+
+.animate-con {
+  min-height: 64px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.animate-con h2 {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.p-small {
+  letter-spacing: -0.004em;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.mCenter {
+  display: inherit;
+}
+
+.animate-con .grey-text {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .doublegrid {
+    grid-template-columns: 1fr;
+  }
+  .main-text-area {
+    padding: 2em;
+    text-align: center;
+  }
+  .main-content {
+    text-align: center;
+  }
+
+  .sub-text {
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+  .m-head {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .mCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-group {
+    justify-content: center;
+  }
+}

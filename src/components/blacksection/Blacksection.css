@@ -1,0 +1,78 @@
+.blacksection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-image: url("../../../src/img/creamgirls.webp");
+  overflow: hidden;
+}
+
+.wc-inner {
+    gap: 1em;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.white-cut-section {
+  min-height: 30vh;
+  color: rgb(73, 46, 8);
+  min-width: fit-content;
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  aspect-ratio: 1.15;
+  text-align: center;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 22.5em;
+  min-width: 22.5rem;
+  background-color: #c7af96;
+}
+
+.white-cut-section span {
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.line-d {
+  background-image: url("../../assets/Lined.svg");
+  min-height: 6px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.testimonial {
+  margin-top: 10px;
+}
+
+.testimonial p {
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .wc-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cover-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    margin-bottom: 1em;
+  }
+}

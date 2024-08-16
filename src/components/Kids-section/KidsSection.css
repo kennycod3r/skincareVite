@@ -1,0 +1,50 @@
+.relative-con {
+  position: relative;
+}
+
+.kids-section-2 {
+  width: 100%;
+  color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 4em 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #aeaeae;
+  background-image: url("../../assets/michelin.svg");
+  background-size: contain;
+
+  background-repeat: space;
+}
+.product-img-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  height: 40vh;
+  border-radius: 50%;
+  width: 40vh;
+  background-image: url(../../assets/brownflower.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.kids-section-inner-2 {
+  flex-direction: column;
+}
+.kids-section-inner-2 p {
+  width: 40vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+  .kids-section-inner-2 p {
+    width: 80vw;
+
+    margin: 10px;
+  }
+}

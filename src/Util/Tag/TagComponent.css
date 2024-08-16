@@ -1,0 +1,41 @@
+.col-tags {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 1em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+.tags {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-grow: 0;
+    width: 100%;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 0.6em 0.2em;
+    flex-wrap: wrap;
+  }
+
+.single-tag {
+    border-radius: 100em;
+    height: 2em;
+    padding: 0 0.85em 0.05em 0.85em;
+    background: var(--dbrown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    color: white;
+    cursor: default;
+    gap: 0.25em;
+}
+
+.single-tag span{
+    color: white;
+}

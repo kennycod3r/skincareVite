@@ -1,0 +1,51 @@
+.info {
+  font-size: 10px;
+  color: rgb(236, 233, 233);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  padding: 2em;
+  text-transform: uppercase;
+  outline: none;
+  transition: transform 200ms ease-in;
+  border-radius: 2em;
+  min-height: 40px;
+  min-width: 150px;
+  width: fit-content;
+  background-color: var(--dbrown);
+}
+
+.info-btn-Content {
+  position: absolute;
+  z-index: 100;
+}
+
+.info::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-radius: 1em;
+  background-size: contain;
+  background-color: #a37659;
+  border-radius: 20px;
+  background-image: url("../../assets/brownflower22.svg");
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.5s ease;
+  z-index: 10;
+}
+
+.info:hover::after {
+  transform: translateY(-100%);
+}
+
+

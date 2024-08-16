@@ -1,0 +1,112 @@
+.outer-ssection {
+  padding-top: 20px;
+  background-color: #c8baab;
+}
+
+.small-section {
+  padding: 3em 1em;
+  display: flex;
+  align-items: center;
+  background-repeat: unset;
+  background-image: url('../../assets/flower7.svg');
+  overflow: hidden;
+  background-color: var(--dbrown);
+  justify-content: center;
+  box-shadow: var(--box-shadow-light);
+  border-top-right-radius: calc(clamp(1em, 1.5vw, 1.5em) * 1.5);
+  border-top-left-radius: calc(clamp(1em, 1.5vw, 1.5em) * 1.5);
+}
+.mp-image-con img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.small-section h2 {
+  text-align: left;
+}
+
+.michelin-stars {
+  display: flex;
+  width: 100%;
+}
+
+.michelin-stars img {
+  width: 40px;
+  height: 40px;
+}
+
+.ss-grid {
+  display: grid;
+  width: 98%;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+  background-color: #89654e48;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  grid-template-columns: 1fr 6fr;
+}
+
+.ss-grid li {
+  padding: 1em;
+  text-align: left;
+  min-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.li-2 {
+  border-top: 1px solid silver;
+}
+
+.ss-grid li div {
+  min-width: 30%;
+}
+
+.boldp {
+  font-weight: 600;
+  line-height: 1.6;
+}
+.color-wheat{
+  color: wheat;
+}
+@media only screen and (max-width: 850px) {
+  .ss-grid {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .michelin-stars {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .small-section {
+    display: block;
+    text-align: center;
+  }
+
+  .small-section h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .ss-grid li {
+    padding: 1em;
+    text-align: left;
+    min-width: 100%;
+    display: block;
+  }
+
+  .ss-grid li div {
+    min-width: 100%;
+  }
+
+  .ratingsp {
+    text-align: center;
+  }
+}
