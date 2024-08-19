@@ -1,4 +1,3 @@
-// Pages/checkoutPage.jsx
 import React from "react";
 import "./Pages.css";
 import { useBag } from "../Context/BagContext";
@@ -37,7 +36,7 @@ const CheckoutPage = () => {
             Your Bag
             <BagIcon />
           </h3>
-          <h3 className="checkout-total">Total: ${getTotal().toFixed(2)}</h3>
+          <h3 className="checkout-total">Total: ${getTotal.toFixed(2)}</h3>
           <h3 className="section-header">Personal Information</h3>
         </div>
         <form className="checkout-form">
@@ -49,6 +48,7 @@ const CheckoutPage = () => {
               name="fullName"
               placeholder="John Doe"
               required
+              aria-describedby="fullName-desc"
             />
           </div>
           <div className="form-group">
@@ -59,6 +59,7 @@ const CheckoutPage = () => {
               name="email"
               placeholder="johndoe@example.com"
               required
+              aria-describedby="email-desc"
             />
           </div>
           <div className="form-group">
@@ -69,6 +70,7 @@ const CheckoutPage = () => {
               name="phone"
               placeholder="(123) 456-7890"
               required
+              aria-describedby="phone-desc"
             />
           </div>
           <div className="form-group">
@@ -79,6 +81,7 @@ const CheckoutPage = () => {
               name="address"
               placeholder="1234 Main St, Apartment, Suite, etc."
               required
+              aria-describedby="address-desc"
             />
           </div>
           <div className="form-group">
@@ -89,6 +92,7 @@ const CheckoutPage = () => {
               name="city"
               placeholder="New York"
               required
+              aria-describedby="city-desc"
             />
           </div>
           <div className="form-group">
@@ -99,6 +103,7 @@ const CheckoutPage = () => {
               name="zipCode"
               placeholder="10001"
               required
+              aria-describedby="zipCode-desc"
             />
           </div>
           <div className="form-group">
@@ -109,6 +114,7 @@ const CheckoutPage = () => {
               name="country"
               placeholder="United States"
               required
+              aria-describedby="country-desc"
             />
           </div>
           <ButtonW className={"checkout-btn"} type={"submit"}>Complete Purchase</ButtonW>

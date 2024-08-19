@@ -19,10 +19,10 @@ const LightBrown = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: "#sliderContainer",
-          start: "top 80%", // Trigger slightly earlier
+          start: "top 80%",
           end: "bottom top",
-          scrub: 0.5, // Adjust scrub for smoother effect
-          markers: false, // Disable markers for production
+          scrub: 0.5,
+          markers: false,
         },
       }
     );
@@ -36,10 +36,10 @@ const LightBrown = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: "#sliderContainer",
-          start: "top 80%", // Trigger slightly earlier
+          start: "top 80%",
           end: "bottom top",
-          scrub: 0.5, // Adjust scrub for smoother effect
-          markers: false, // Disable markers for production
+          scrub: 0.5,
+          markers: false,
         },
       }
     );
@@ -57,7 +57,11 @@ const LightBrown = () => {
               </h4>
               <p>off on all kids products</p>
             </div>
-            <Link to={"/kids-page"} className="w100">
+            <Link
+              to={"/kids-page"}
+              className="w100"
+              aria-label="Claim $10 off on all kids products"
+            >
               <div className="button-group">
                 <div className="u--rel">
                   <div className="p-small">claim now</div>
@@ -73,7 +77,11 @@ const LightBrown = () => {
               </h4>
               <p className="blue-color">off on all kids products</p>
             </div>
-            <Link to={"/kids-page"} className="w100">
+            <Link
+              to={"/kids-page"}
+              className="w100"
+              aria-label="Claim $10 off on all kids products"
+            >
               <div className="button-group">
                 <div className="u--rel">
                   <div className="p-small">claim now</div>

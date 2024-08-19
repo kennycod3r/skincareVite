@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Hero.css";
 import TinyDiv from "../../Util/tinyDiv/TinyDiv";
 import heroImg from "../../img/womanHero.webp";
 import StaticNav from "../../Util/StaticNav/StaticNav";
@@ -36,7 +35,7 @@ const Hero = React.memo(({ heroImgUrl, handleBagOpen, handleOpenDisplay }) => {
       <StaticNav handleBagOpen={handleBagOpen} />
       <div
         ref={heroRef}
-        className={`hero fC ${isImageLoaded ? "loaded" : ""}`}
+        className={`hero background-images fC ${isImageLoaded ? "loaded" : ""}`}
         style={{
           backgroundImage: isImageLoaded
             ? `url(${heroImgUrl || heroImg})`

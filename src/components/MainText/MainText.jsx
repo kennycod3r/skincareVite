@@ -42,7 +42,7 @@ const MainText = () => {
               <div className="animate-con m-head">
                 <h2 className="headerh2">Discover Your Radiance.</h2>
               </div>
-              <span>Since “2017”.</span>
+             
             </div>
             <p className=" tal sub-text mCenter">
               Lumina is a multicultural skincare company, dedicated to providing

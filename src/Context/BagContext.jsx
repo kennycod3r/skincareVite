@@ -1,5 +1,4 @@
-// context/BagContext.js
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useMemo } from "react";
 
 const BagContext = createContext();
 
@@ -21,15 +20,27 @@ export const BagProvider = ({ children }) => {
     });
   };
 
-  const getTotal = () => {
-    return bagItems.reduce(
-      (total, item) => total + item.price * item.quantity,
-      0
+  const handleRemoveFromBag = (id) => {
+    setBagItems((prevState) =>
+      prevState.filter((item) => item.id !== id)
     );
   };
 
+  // Function to check if the product is already in the bag
+  const isInBag = (id) => {
+    return bagItems.some((item) => item.id === id);
+  };
+
+  const getTotal = useMemo(
+    () =>
+      bagItems.reduce((total, item) => total + item.price * item.quantity, 0),
+    [bagItems]
+  );
+
   return (
-    <BagContext.Provider value={{ bagItems, handleUpdateBag, getTotal }}>
+    <BagContext.Provider
+      value={{ bagItems, handleUpdateBag, handleRemoveFromBag, isInBag, getTotal }}
+    >
       {children}
     </BagContext.Provider>
   );

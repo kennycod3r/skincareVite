@@ -18,6 +18,7 @@ import Bag from "./components/Bag/Bag";
 import skincareData from "./Data/skincareData";
 import { BagProvider } from "./Context/BagContext";
 import { CheckoutProvider } from "./Context/CheckoutContext";
+import { FavoritesProvider } from "./Context/FavoritesContext"; // Import FavoritesProvider
 
 const App = () => {
   useLenis();
@@ -36,44 +37,46 @@ const App = () => {
   if (isLoading) return <Loading />;
 
   return (
-    <BagProvider>
-      <CheckoutProvider>
-        <Router>
-          <div className="wrapper">
-            <Header
-              handleSidebar={handleSidebar}
-              handleBagOpen={handleBagOpen}
-              openSidebar={openSidebar}
-            />
-            <Sidebar openSidebar={openSidebar} handleSidebar={handleSidebar} />
-            <Bag bagOpen={bagOpen} handleBagOpen={handleBagOpen} />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/journal" element={<Journal />} />
-              <Route
-                path="/products"
-                element={<Products products={skincareData} />}
+    <FavoritesProvider>
+      <BagProvider>
+        <CheckoutProvider>
+          <Router>
+            <div className="wrapper">
+              <Header
+                handleSidebar={handleSidebar}
+                handleBagOpen={handleBagOpen}
+                openSidebar={openSidebar}
               />
-              <Route
-                path="/products/:productId"
-                element={
-                  <ProductDetail
-                    products={skincareData}
-                    handleBagOpen={handleBagOpen}
-                  />
-                }
-              />
-              <Route path="/checkoutPage" element={<CheckoutPage />} />
-              <Route path="/bag" element={<BagPage />} />
-              <Route path="/favorites" element={<FavoritesPage />} />
-              <Route path="/contact-page" element={<Contact />} />
-              <Route path="/kids-page" element={<KidsPage />} />
-            </Routes>
-            <Footer />
-          </div>
-        </Router>
-      </CheckoutProvider>
-    </BagProvider>
+              <Sidebar openSidebar={openSidebar} handleSidebar={handleSidebar} />
+              <Bag bagOpen={bagOpen} handleBagOpen={handleBagOpen} />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/journal" element={<Journal />} />
+                <Route
+                  path="/products"
+                  element={<Products products={skincareData} />}
+                />
+                <Route
+                  path="/products/:productId"
+                  element={
+                    <ProductDetail
+                      products={skincareData}
+                      handleBagOpen={handleBagOpen}
+                    />
+                  }
+                />
+                <Route path="/checkoutPage" element={<CheckoutPage />} />
+                <Route path="/bag" element={<BagPage />} />
+                <Route path="/favorites" element={<FavoritesPage />} />
+                <Route path="/contact-page" element={<Contact />} />
+                <Route path="/kids-page" element={<KidsPage />} />
+              </Routes>
+              <Footer />
+            </div>
+          </Router>
+        </CheckoutProvider>
+      </BagProvider>
+    </FavoritesProvider>
   );
 };
 

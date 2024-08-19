@@ -5,6 +5,9 @@
   padding: 20px;
 }
 
+.favorites-Page{
+  min-height: 70svh;
+}
 h2 {
   text-align: center;
   margin-bottom: 20px;

@@ -62,11 +62,10 @@
 }
 
 .sub-text {
-  line-height: 1.6;
-  letter-spacing: normal;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.px;
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.6;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -143,10 +142,12 @@
   .doublegrid {
     grid-template-columns: 1fr;
   }
+
   .main-text-area {
-    padding: 2em;
+    padding: 2rem;
     text-align: center;
   }
+
   .main-content {
     text-align: center;
   }
@@ -155,6 +156,7 @@
     margin: 0 auto;
     font-size: 0.9rem;
   }
+
   .m-head {
     text-align: center;
     justify-content: center;
@@ -166,7 +168,8 @@
     align-items: center;
     justify-content: center;
   }
-  .button-group {
-    justify-content: center;
+
+  .title-cards {
+    padding: 2rem 1rem;
   }
 }

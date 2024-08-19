@@ -6,10 +6,10 @@ const ProductItem = ({ product, discount }) => (
   <div className="product-item">
     <Link to={`/products/${product.id}`}>
       <div className="product-img-con">
-      <span className="m-pricetag absolute-m">{discount ? `$10` : `$ ${product.price - 4}`}</span>
-        <div className="hero-overlay r-overlay">View Details
-       
-        </div>
+        <span className="m-pricetag absolute-m">
+          {discount ? `$${product.price - 10}` : `$${product.price}`}
+        </span>
+        <div className="hero-overlay r-overlay">View Details</div>
         <img src={product.image} alt={product.name} loading="lazy" />
       </div>
     </Link>
@@ -22,7 +22,7 @@ const ProductList = ({ products, discount }) => {
   return (
     <div className="product-list">
       {products.map((product) => (
-        <ProductItem key={product.id} product={product} discount={discount}/>
+        <ProductItem key={product.id} product={product} discount={discount} />
       ))}
     </div>
   );

@@ -1,4 +1,3 @@
-// components/Bag/Bag.jsx
 import React from "react";
 import "./BagStyle.css";
 import { createPortal } from "react-dom";
@@ -30,7 +29,7 @@ const Bag = ({ bagOpen, handleBagOpen }) => {
               bagItems.map((item) => (
                 <li key={item.id} className="bag-item">
                   <div className="bag-img-div">
-                    <img src={item.image} alt={item.name} />
+                    <img src={item.image} alt={item.name} loading="lazy"/>
                   </div>
                   <div className="w100 cart-detail-text">
                     <div className="flexSB">
@@ -53,7 +52,7 @@ const Bag = ({ bagOpen, handleBagOpen }) => {
             <div className="product-detail-buttons w100">
               <Link to="/checkoutPage" className="w100">
                 <button className="bag-btn" onClick={handleBagOpen}>
-                  Checkout Total: ${getTotal().toFixed(2)}
+                  Checkout Total: ${getTotal.toFixed(2)}
                 </button>
               </Link>
               <div className="underline" onClick={handleBagOpen}>

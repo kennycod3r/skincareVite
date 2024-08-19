@@ -151,7 +151,7 @@ select {
 }
 
 .sub-btn {
-  background-color: #fff;
+  background-color: var(--color-white);
   color: black;
   padding: 10px;
   cursor: pointer;

@@ -1,4 +1,5 @@
 import React from "react";
+import "./StaticNav.css";
 import ButtonW from "../ButtonWrapper/ButtonW";
 import skincareData from "../../Data/skincareData";
 import { Link } from "react-router-dom";
@@ -30,7 +31,7 @@ const StaticNav = () => {
       <div className="static-div-one flexSB">
         <ul className="main-nav-bar">
           <li>
-            <p className="tinyp b700">
+            <p className="logo-text">
               <span>SKINCARE</span>
             </p>
           </li>
@@ -117,13 +118,11 @@ const StaticNav = () => {
             </div>
           </li>
         </ul>
-        <div className="flexSB">
-          <div className="showmobile">
-            <Link to={"./Contact-page"}>
-              {" "}
-              <ButtonW className="static-nav-btn">CONTACT US</ButtonW>
-            </Link>
-          </div>
+        <div className="flexSB showmobile">
+          <Link to={"./Contact-page"}>
+            {" "}
+            <ButtonW className="">CONTACT US</ButtonW>
+          </Link>
         </div>
       </div>
     </div>

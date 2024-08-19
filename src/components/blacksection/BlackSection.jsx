@@ -6,7 +6,7 @@ import linedImage from "../../assets/Lined.svg";
 const BlackSection = () => {
   return (
     <section
-      className="blacksection"
+      className="blacksection background-images"
       style={{ backgroundImage: `url(${creamGirlsImage})` }}
     >
       <div className="white-cut-section">

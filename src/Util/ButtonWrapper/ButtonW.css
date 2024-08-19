@@ -14,7 +14,7 @@
   transition: transform 200ms ease-in;
   border-radius: 2em;
   min-height: 40px;
-  min-width: 150px;
+  min-width: 130px;
   width: fit-content;
   background-color: var(--dbrown);
 }
@@ -47,5 +47,3 @@
 .info:hover::after {
   transform: translateY(-100%);
 }
-
-

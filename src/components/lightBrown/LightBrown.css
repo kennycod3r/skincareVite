@@ -81,6 +81,7 @@ html.w-mod-touch * {
   text-align: center;
   border-radius: 2rem;
 }
+
 .card_heading {
   text-decoration: line-through;
   position: relative;
@@ -93,7 +94,8 @@ html.w-mod-touch * {
   font-size: 50px;
   right: auto;
 }
-.flowerIcon, .flowerIcon2 {
+.flowerIcon,
+.flowerIcon2 {
   position: absolute;
   height: 100px;
   z-index: -1;
@@ -119,7 +121,7 @@ html.w-mod-touch * {
   text-align: center;
 }
 
-.fd-inner p{
+.fd-inner p {
   color: var(--color-white);
 }
 
