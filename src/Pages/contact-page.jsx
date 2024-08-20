@@ -5,7 +5,7 @@ import ButtonW from "../Util/ButtonWrapper/ButtonW";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2>Contact Us</h2>
+      <h2 className="color-brown headerp">Contact Us</h2>
       <div className="contact-content ">
         <div className="contact-form">
           <form>

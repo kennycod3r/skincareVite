@@ -47,7 +47,10 @@ const ProductDetail = ({ products, handleBagOpen }) => {
   return (
     <>
       <Header position={"static"} />
-
+      <div className="green-top">
+        <p className="subscribe-text">Subscribe</p>
+        <p className="headerp">and save up to 46% by selecting 4 products</p>
+      </div>
       <section className="product-detail-section">
         <div className="product-detail">
           <div className="product-detail-img background-images">
@@ -57,7 +60,8 @@ const ProductDetail = ({ products, handleBagOpen }) => {
             <div className="product-detail-content">
               <h3 className="title-header product-price">{product.name}</h3>
               <h3 className="product-price small-pp">
-                <span>${(product.price + 12).toFixed(2)}</span> ${product.price.toFixed(2)}
+                <span>${(product.price + 12).toFixed(2)}</span> $
+                {product.price.toFixed(2)}
               </h3>
               <p>{product.description}</p>
             </div>

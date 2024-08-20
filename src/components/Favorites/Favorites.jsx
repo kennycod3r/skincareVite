@@ -21,7 +21,7 @@ const Favorites = ({ favoriteItems = [] }) => {
 
   return (
     <div className="favorites-container">
-      <h2 className="favorites-title headerh2">My Favorites</h2>
+      <h2 className="favorites-title headerp color-brown">My Favorites</h2>
       <ul className="favorites-grid">
         {favoriteItems.length > 0 ? (
           favoriteItems.map((item) => (

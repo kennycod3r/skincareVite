@@ -20,13 +20,20 @@ export const BagProvider = ({ children }) => {
     });
   };
 
-  const handleRemoveFromBag = (id) => {
+  const updateQuantity = (id, newQuantity) => {
     setBagItems((prevState) =>
-      prevState.filter((item) => item.id !== id)
+      prevState.map((item) =>
+        item.id === id && newQuantity > 0
+          ? { ...item, quantity: newQuantity }
+          : item
+      )
     );
   };
 
-  // Function to check if the product is already in the bag
+  const handleRemoveFromBag = (id) => {
+    setBagItems((prevState) => prevState.filter((item) => item.id !== id));
+  };
+
   const isInBag = (id) => {
     return bagItems.some((item) => item.id === id);
   };
@@ -39,7 +46,14 @@ export const BagProvider = ({ children }) => {
 
   return (
     <BagContext.Provider
-      value={{ bagItems, handleUpdateBag, handleRemoveFromBag, isInBag, getTotal }}
+      value={{
+        bagItems,
+        handleUpdateBag,
+        handleRemoveFromBag,
+        isInBag,
+        getTotal,
+        updateQuantity,
+      }}
     >
       {children}
     </BagContext.Provider>

@@ -14,6 +14,12 @@
   will-change: opacity, transform;
 }
 
+.sidebarHeader {
+  font-size: 26px !important;
+  font-weight: 500;
+  color: #3b1906;
+}
+
 .main-sidebar.open {
   transform: translateX(0);
   opacity: 1;
@@ -22,6 +28,9 @@
 
 .inner-main-sidebar {
   position: fixed;
+  background-image: url("../../assets/tagSvg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   top: 10%;
   left: 1%;
   width: min(100%, 25em);
@@ -38,7 +47,7 @@
   z-index: 97;
   box-shadow: var(--box-shadow);
   background-color: #c8baab;
-  border: 1px solid #d5aa90;
+  border: 1px solid #cf9a78;
 }
 
 .inner-main-sidebar ul {
@@ -52,6 +61,7 @@
   padding: 1.5em 1.5em 2em 2.25em;
   flex-wrap: nowrap;
 }
+
 
 .inner-main-sidebar p {
   font-size: 1.5em;
@@ -100,6 +110,8 @@
   cursor: pointer;
   transition: var(--animationSmooth);
   transform: translateX(0);
+  width: 100%;
+ 
 }
 
 .main-sidebar a:hover {
@@ -117,7 +129,7 @@
 }
 
 .dot.active {
-  background-color: #e34248;
+  background-color: #3b1906;
 }
 
 .navigatin-sidelink {
@@ -144,10 +156,10 @@
 @media only screen and (max-width: 650px) {
   .inner-main-sidebar {
     position: static;
-    width: min(100%, 25em);
+    width: min(100%, 22em);
     margin: 0 auto;
   }
-  .main-sidebar{
+  .main-sidebar {
     display: flex;
     align-items: center;
   }

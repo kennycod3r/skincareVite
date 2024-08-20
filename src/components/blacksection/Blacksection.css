@@ -19,6 +19,8 @@
 }
 
 .white-cut-section {
+  background-image: url('../../assets/tagSvg.svg');
+  background-size: contain;
   min-height: 30vh;
   color: rgb(73, 46, 8);
   min-width: fit-content;

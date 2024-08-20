@@ -28,7 +28,7 @@
   height: 40vh;
   border-radius: 50%;
   width: 40vh;
-  background-image: url(../../assets/brownflower.svg);
+  background-image: url("../../assets/brownflower.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }

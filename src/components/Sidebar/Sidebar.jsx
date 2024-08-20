@@ -25,14 +25,14 @@ const Sidebar = ({ openSidebar, handleSidebar }) => {
           <li onClick={handleSidebar}>
             <Link to="/" className="sidebar-link">
               <div>
-                <p className="quote-heading headerh2">Home</p>
+                <p className="quote-heading sidebarHeader">Home</p>
               </div>
               <div className={`dot ${isActive("/") ? "active" : ""}`}></div>
             </Link>
           </li>
           <li onClick={handleSidebar}>
             <Link to="/Journal" className="sidebar-link">
-              <p className="quote-heading headerh2">Journal</p>
+              <p className="quote-heading sidebarHeader">Journal</p>
               <div
                 className={`dot ${isActive("/Journal") ? "active" : ""}`}
               ></div>
@@ -40,7 +40,7 @@ const Sidebar = ({ openSidebar, handleSidebar }) => {
           </li>
           <li onClick={handleSidebar}>
             <Link to="/products" className="sidebar-link">
-              <p className="quote-heading headerh2">Products</p>
+              <p className="quote-heading sidebarHeader">Products</p>
               <div
                 className={`dot ${isActive("/products") ? "active" : ""}`}
               ></div>
@@ -48,7 +48,7 @@ const Sidebar = ({ openSidebar, handleSidebar }) => {
           </li>
           <li onClick={handleSidebar}>
             <Link to="/kids-page" className="sidebar-link">
-              <p className="quote-heading headerh2">Kids</p>
+              <p className="quote-heading sidebarHeader">Kids</p>
               <div
                 className={`dot ${isActive("/kids-page") ? "active" : ""}`}
               ></div>
