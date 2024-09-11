@@ -45,7 +45,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: var(--dbrown);
+  
 }
 .email-worker {
   padding: 1em;
@@ -100,26 +100,6 @@
   align-items: center;
 }
 
-
-@media only screen and (max-width: 720px) {
-  .dp-image-con {
-    height: 100%; /* Make sure it fills the available space */
-    overflow: hidden;
-    min-height: 300px; /* Optional */
-    position: relative; /* Ensure this is relative for the image inside to be positioned correctly */
-  }
-
-  .dp-image-con img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    min-height: 100%; /* Adjust to fill space properly */
-  }
-}
 @media only screen and (max-width: 720px) {
   .display-page-content{
     grid-template-columns: 1fr;
