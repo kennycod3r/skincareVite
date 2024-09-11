@@ -109,7 +109,7 @@ const Header = memo(
                     </div>
                   </Link>
                 </li>
-                <li className="animateLink">
+                <li className="animateLink showmobile">
                   <Link to="/favorites">
                     <div className="nav-link-click">
                       <p className="tinyp" data-hover="FAV">
