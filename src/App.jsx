@@ -1,5 +1,6 @@
+// src/App.jsx
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/home";
@@ -18,7 +19,18 @@ import Bag from "./components/Bag/Bag";
 import skincareData from "./Data/skincareData";
 import { BagProvider } from "./Context/BagContext";
 import { CheckoutProvider } from "./Context/CheckoutContext";
-import { FavoritesProvider } from "./Context/FavoritesContext"; // Import FavoritesProvider
+import { FavoritesProvider } from "./Context/FavoritesContext"; 
+
+// ScrollToTop component
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const App = () => {
   useLenis();
@@ -41,6 +53,7 @@ const App = () => {
       <BagProvider>
         <CheckoutProvider>
           <Router>
+            <ScrollToTop /> {/* This ensures scroll to top on navigation */}
             <div className="wrapper">
               <Header
                 handleSidebar={handleSidebar}
@@ -52,10 +65,7 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/journal" element={<Journal />} />
-                <Route
-                  path="/products"
-                  element={<Products products={skincareData} />}
-                />
+                <Route path="/products" element={<Products products={skincareData} />} />
                 <Route
                   path="/products/:productId"
                   element={
