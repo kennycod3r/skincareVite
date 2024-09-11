@@ -44,6 +44,7 @@
 .dp-image-con {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 .email-worker {
   padding: 1em;
@@ -100,7 +101,18 @@
 @media only screen and (max-width: 720px) {
   .dp-image-con {
     height: 100%;
+    overflow: hidden;
+    min-height: 300px;
+  }
+
+  .dp-image-con img{
+    height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 300px;
   }
   .display-page-content {
     grid-template-columns: 1fr;
