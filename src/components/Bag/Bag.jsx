@@ -55,7 +55,7 @@ const Bag = ({ bagOpen, handleBagOpen }) => {
                   Checkout Total: ${getTotal.toFixed(2)}
                 </button>
               </Link>
-              <div className="underline" onClick={handleBagOpen}>
+              <div className="underline fC" onClick={handleBagOpen}>
                 Continue Shopping?
               </div>
             </div>

@@ -166,4 +166,12 @@
   .inner-main-sidebar-bag {
     width: 100%;
   }
+  .bag-body {
+    overflow-y: auto;
+    padding: 20px 0;
+  }
+  .bag-item {
+    margin: 0;
+    padding: 16px 7px;
+  }
 }
