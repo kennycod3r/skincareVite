@@ -7,7 +7,7 @@ import ButtonW from "../../Util/ButtonWrapper/ButtonW";
 
 const DisplayPage = ({ handleOpenDisplay, openDisplay }) => {
   return (
-    <div className={`display-page ${openDisplay ? "display-page-open" : ""}`}>
+    <div data-lenis-prevent className={`display-page ${openDisplay ? "display-page-open" : ""}`}>
       <div className="flex-header">
         <a target="_blank" rel="noopener noreferrer" href="/">
           <span className="dp-header-top">
