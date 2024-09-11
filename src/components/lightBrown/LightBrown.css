@@ -166,22 +166,31 @@ html.w-mod-touch * {
     position: relative;
     padding-top: 2em;
   }
-  .fd-conn {
-    width: 80%;
-    margin: 0 auto;
-    position: static;
-  }
 
   .fd-conn {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    gap: 0.3em;
     position: static;
+    perspective: auto;
+    padding: 0 1em;
   }
 
   .floating-div {
     margin-top: 2em;
+    padding: 5px;
     position: static;
     transform: none;
     transition: none;
+  }
+  .offset {
+    position: absolute;
+    top: 0;
+    height: 13px;
+    width: 15px;
+    left: 20px;
+    font-size: 30px;
+    right: auto;
+    color: rgb(235, 212, 172);
   }
 }
